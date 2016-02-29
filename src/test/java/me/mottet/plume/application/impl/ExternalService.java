@@ -1,4 +1,4 @@
-package me.mottet.plume.impl;
+package me.mottet.plume.application.impl;
 
 public class ExternalService {
 

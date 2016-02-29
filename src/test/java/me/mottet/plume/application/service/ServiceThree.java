@@ -1,4 +1,4 @@
-package me.mottet.plume.service;
+package me.mottet.plume.application.service;
 
 public interface ServiceThree {
 

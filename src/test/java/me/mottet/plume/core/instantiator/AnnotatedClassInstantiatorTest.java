@@ -22,7 +22,7 @@ public class AnnotatedClassInstantiatorTest {
         Map<Class, Object> instantiatedService = annotatedClassInstantiator.getInstances();
 
         // Verify
-        assertThat(instantiatedService).isNotEmpty();
+        assertThat(instantiatedService).hasSize(1);
         assertThat(instantiatedService.get(ServiceToInstantiate.class)).isExactlyInstanceOf(ServiceToInstantiate.class);
         assertThat(((ServiceToInstantiate)instantiatedService.get(ServiceToInstantiate.class)).returnTrue()).isTrue();
     }

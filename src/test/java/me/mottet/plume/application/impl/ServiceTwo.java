@@ -1,8 +1,8 @@
-package me.mottet.plume.impl;
+package me.mottet.plume.application.impl;
 
 import me.mottet.plume.annotation.Inject;
 import me.mottet.plume.annotation.Service;
-import me.mottet.plume.service.ServiceThree;
+import me.mottet.plume.application.service.ServiceThree;
 
 @Service
 public class ServiceTwo {

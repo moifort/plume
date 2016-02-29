@@ -34,7 +34,7 @@ public class AnnotatedClassInstantiator implements Instantiator {
         } catch (InstantiationException e) {
             throw new PlumeAnnotationException("The service " + serviceClass.getName() + " must have a constructor without argument", e);
         } catch (Exception e) {
-            throw new PlumeAnnotationException("Problem to instantiate service: " + serviceClass, e);
+            throw new PlumeAnnotationException("Problem to instantiate service: " + serviceClass.getName(), e);
         }
     }
 }

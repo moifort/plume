@@ -8,18 +8,17 @@ import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
-public class InterfaceInstanciator implements Instantiator {
+public class InterfaceInstantiator implements Instantiator {
 
-    private final Map<Class, Object> allInstantiateClass;
+    private final Map<Class, Object> interfaceMapWithInstance;
 
-    public InterfaceInstanciator(List<Instantiator> instantiators) {
-        allInstantiateClass = new HashMap<>();
-        instantiators.forEach(instantiator -> allInstantiateClass.putAll(instantiator.getInstances()));
+    public InterfaceInstantiator(Map<Class, Object> allInstantiatedClasses) {
+        this.interfaceMapWithInstance = associateInterfacesToServicesInstance(allInstantiatedClasses);
     }
 
     @Override
     public Map<Class, Object> getInstances() {
-        return associateInterfacesToServicesInstance(allInstantiateClass);
+        return interfaceMapWithInstance;
     }
 
     private Map<Class, Object> associateInterfacesToServicesInstance(Map<Class, Object> instantiatedServicesOnly) {
@@ -35,7 +34,7 @@ public class InterfaceInstanciator implements Instantiator {
     private void ifInterfaceIsImplementedByMoreThanOneServiceThrowException(Map<Class, Object> interfaces, Map<Class, Object> services) {
         Set<Class> interfaceError = getAllInterfaceWithMultiImplements(interfaces.keySet(), services.keySet());
         if (interfaceError.size() > 0)
-            throw new PlumeAnnotationException("Interface(s) are implemented by two services. List below:\n" + getInterfacesListName(interfaceError));
+            throw new PlumeAnnotationException("Interface(s) cannot be implemented by more than one service. List below:\n" + getInterfacesListName(interfaceError));
     }
 
     private String getInterfacesListName(Set<Class> interfacesClass) {

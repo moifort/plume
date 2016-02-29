@@ -3,15 +3,15 @@ package me.mottet.plume.application;
 import me.mottet.plume.annotation.EnablePlume;
 import me.mottet.plume.annotation.Inject;
 import me.mottet.plume.core.Plume;
-import me.mottet.plume.impl.ServiceTwo;
+import me.mottet.plume.application.impl.ServiceTwo;
 
 @EnablePlume
-public class ApplicationTest {
+public class Application {
 
     @Inject private ServiceTwo serviceTwo;
 
     public static void main(String... args) {
-        new ApplicationTest().run();
+        new Application().run();
     }
 
     public void run() {

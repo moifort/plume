@@ -11,11 +11,11 @@ import java.util.Set;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
-public class MapStructInstantiator implements Instantiator {
+public class MapstructInstantiator implements Instantiator {
 
     private final Map<Class, Object> instantiatedServices;
 
-    public MapStructInstantiator(ReflectionUtil reflectionUtil) {
+    public MapstructInstantiator(ReflectionUtil reflectionUtil) {
         this.instantiatedServices = instantiateMappers(reflectionUtil);
     }
 
