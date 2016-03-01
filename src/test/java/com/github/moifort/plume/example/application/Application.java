@@ -1,9 +1,9 @@
-package com.github.moifort.plume.application;
+package com.github.moifort.plume.example.application;
 
 import com.github.moifort.plume.annotation.EnablePlume;
 import com.github.moifort.plume.annotation.Inject;
 import com.github.moifort.plume.core.Plume;
-import com.github.moifort.plume.application.impl.ServiceTwo;
+import com.github.moifort.plume.example.application.impl.ServiceTwo;
 
 @EnablePlume
 public class Application {

@@ -1,4 +1,4 @@
-package com.github.moifort.plume.application.impl;
+package com.github.moifort.plume.example.application.impl;
 
 public class ExternalService {
 

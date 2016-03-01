@@ -1,4 +1,4 @@
-package com.github.moifort.plume.application.impl;
+package com.github.moifort.plume.example.application.impl;
 
 import com.github.moifort.plume.annotation.Service;
 

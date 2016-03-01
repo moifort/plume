@@ -1,18 +1,10 @@
 package com.github.moifort.plume.core.instantiator;
 
-import com.github.moifort.plume.exception.PlumeAnnotationException;
-import org.junit.Before;
 import org.junit.Test;
-
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.Map;
-
-import static org.assertj.core.api.Assertions.assertThat;
 
 public class InterfaceInstantiatorTest {
 
-    private InterfaceInstantiator interfaceInstantiator;
+    /*private InterfaceInstantiator interfaceInstantiator;
     private ServiceWithMultiInterface serviceWithMultiInterface;
     private ServiceWithSameInterface serviceWithSameInterface;
 
@@ -49,6 +41,15 @@ public class InterfaceInstantiatorTest {
 
         // Exercise
         interfaceInstantiator.getInstances();
+    }*/
+
+    @Test
+    public void test_Should_When() {
+        // Setup
+
+        // Exercise
+
+        // Verify
     }
 
     public interface InterfaceOne {

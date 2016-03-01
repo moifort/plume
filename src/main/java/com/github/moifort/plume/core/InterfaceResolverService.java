@@ -14,7 +14,6 @@ public class InterfaceResolverService {
         this.interfaceMapWithInstance = associateInterfacesToServicesInstance(allInstantiatedClasses);
     }
 
-    @Override
     public Map<Class, Object> getInstances() {
         return interfaceMapWithInstance;
     }

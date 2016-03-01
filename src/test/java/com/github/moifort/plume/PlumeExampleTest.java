@@ -1,9 +1,9 @@
 package com.github.moifort.plume;
 
-import com.github.moifort.plume.application.Application;
+import com.github.moifort.plume.example.application.Application;
 import org.junit.Test;
 
-public class PlumeTest {
+public class PlumeExampleTest {
 
 
     @Test
@@ -12,6 +12,6 @@ public class PlumeTest {
         Application application = new Application();
 
         // Exercise
-        application.main();
+        //application.main();
     }
 }

@@ -1,4 +1,4 @@
-package com.github.moifort.plume.application.service;
+package com.github.moifort.plume.example.application.service;
 
 public interface ServiceThree {
 
