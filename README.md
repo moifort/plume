@@ -1,6 +1,6 @@
 # Plume
 
-Light dependency injection for java
+Light library for dependency injection for java
 
 ## Maven
 
